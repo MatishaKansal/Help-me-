@@ -26,7 +26,6 @@ class Start{
         this.greeting.style('fontSize', 'xxx-large');
         this.greeting.style('fontWeight', '900');
         this.greeting.style('textDecoration', 'underline overline');
-
     }
 
     hide(){

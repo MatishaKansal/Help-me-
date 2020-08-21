@@ -46,6 +46,27 @@ class Order{
             game3.update2(place);
             var num = this.number.value();
             game4.update3(num);
-        });
+            game1.getItemInfo();
+            game2.getNumInfo();
+            game3.getPlaceInfo();
+            game4.getTimeInfo();
+            // textSize(20);  
+            // text("sky", 200, 200);
+            this.order.hide();
+            this.item.hide();
+            this.timmings.hide();
+            this.time.hide();
+            this.place.hide();
+            this.number.hide();
+            this.submit.hide();
+            function0 = new Function();
+            function0.display()
+            // console.log(Game.getItemInfo);
+            function1.getItemInfo(databaseitem);
+            function2.getNumInfo(databasenum);
+            function3.getPlaceInfo(databaseplace);
+            function4.getTimeInfo(databasetime);   
+
+    });
     }
-}
+}       

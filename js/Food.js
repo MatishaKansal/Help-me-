@@ -33,8 +33,12 @@ class Food{
             this.phone.hide();
             this.greeting.hide();
             this.title.hide();
-            time = new Time();
-            time.display();
+            end = new End();
+            end.display();
+            end1.getItemInfo(databaseitem);
+            end2.getNumInfo(databasenum);
+            end3.getPlaceInfo(databaseplace);
+            end4.getTimeInfo(databasetime); 
         });
     }
 }

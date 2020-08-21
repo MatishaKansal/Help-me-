@@ -25,10 +25,31 @@ class Game{
     });
   }
 
-  static getItemInfo(){
-    var itemInfoRef = database.ref('item');
-    itemInfoRef.on("value",(data)=>{
-      item = data.val();
-    })
+  getItemInfo() {
+    databaseitem = database.ref("item/item");
+    databaseitem.on("value", (data) => {
+      databaseitem = data.val();
+    });
+  }
+
+  getNumInfo() {
+    databasenum = database.ref("itemNumber/itemNumber");
+    databasenum.on("value", (data) => {
+      databasenum = data.val();
+    });
+  }
+
+  getPlaceInfo() {
+    databaseplace = database.ref("place/place");
+    databaseplace.on("value", (data) => {
+      databaseplace = data.val();
+    });
+  }
+
+  getTimeInfo() {
+    databasetime = database.ref("time/time");
+    databasetime.on("value", (data) => {
+      databasetime = data.val();
+    });
   }
 }
